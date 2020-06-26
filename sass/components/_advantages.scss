@@ -1,0 +1,71 @@
+.our-advantage {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.advantage {
+  @extend %list;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  // &:not(:last-child) {
+  @media screen and (min-width: 1140px) {
+    display: flex;
+    // margin: 0;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+  // }
+}
+.advantages {
+  @extend %list;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1140px) {
+    width: 25%;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.icon-svg {
+  display: inline-flex;
+  width: 100%;
+
+  // width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $background-button-color;
+  border-radius: 4%;
+  justify-content: center;
+  align-items: center;
+}
+.icon-advantag {
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    display: flex;
+    border-radius: 4%;
+  }
+}
+.section-caption {
+  color: $tittle-text-color;
+  font-family: $main-font, $reserv-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 0px 0px 10px 0px;
+  text-transform: uppercase;
+}
+.text-caption {
+  font-family: $main-font, $reserv-font;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-text-color;
+}

@@ -1,0 +1,123 @@
+.menu-button {
+  // display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: solid 2px red;
+  background-color: $hero-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $hover-link-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon-close {
+    display: none;
+  }
+}
+
+.menu-button .is-open {
+  .icon-close {
+    display: block;
+  }
+}
+
+.menu-button .is-open {
+  .icon-menu {
+    display: none;
+  }
+}
+.menu-svg {
+  @extend %list;
+}
+.mobile-menu {
+  position: absolute;
+  outline: solid 1px rebeccapurple;
+  background-color: $hero-text-color;
+  width: 100%;
+  top: 160px;
+  left: 0;
+}
+
+.site-nav .link,
+.link-active {
+  position: relative;
+  color: $tittle-text-color;
+
+  font-weight: 500;
+  font-family: $main-font, $reserv-font;
+  font-size: 14px;
+  letter-spacing: 2%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-active {
+  @extend %links;
+  color: $hover-link-color;
+}
+
+.authorise-nav .link {
+  font-family: $main-font, $reserv-font;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 2%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// .authorise-nav .item {
+//   // padding-top: 32px;
+//   // padding-bottom: 32px;
+// }
+.authorise-nav {
+  // display: flex;
+  @extend %list;
+  // margin-left: auto;
+  align-items: center;
+
+  & .link:hover,
+  .link:focus {
+    color: $hover-link-color;
+  }
+}
+.item .link {
+  // display: flex;
+
+  @extend %links;
+  align-items: center;
+}
+.mail {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link-active::after {
+  content: "";
+  position: absolute;
+  align-items: baseline;
+  width: 100%;
+  height: 4px;
+
+  bottom: 0;
+  left: 0;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+.site-nav {
+  // display: flex;
+  @extend %list;
+
+  & .link:hover,
+  .link:focus {
+    color: $hover-link-color;
+  }
+}
+.item:not(:last-child) {
+  margin-right: 50px;
+}

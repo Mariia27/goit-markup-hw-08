@@ -1,0 +1,109 @@
+.team {
+  background-color: $background-button-color;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.conteiner-team {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1170px;
+}
+.section-team {
+  @extend %list;
+
+  align-content: center;
+  @media screen and (min-width: 1140px) {
+    // display: flex;
+  }
+}
+.section-tittle {
+  @media screen and (min-width: 450px) {
+    width: 100%;
+  }
+}
+.employee + .employee {
+  @media screen and (min-width: 450px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1140px) {
+    margin-left: 30px;
+  }
+}
+.employee {
+  @extend %list;
+  border-radius: 4px;
+  background-color: $hero-text-color;
+  width: 450px;
+  cursor: pointer;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.section-workers {
+  font-family: $main-font, $reserv-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  @extend %list;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.workers-text {
+  font-family: $main-font, $reserv-font;
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.19;
+  @extend %list;
+  margin-bottom: 16px;
+}
+.links-item .social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: $hero-text-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-link-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.links-item .icon-worker {
+  fill: $primary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social:hover .icon-worker,
+.social:focus .icon-worker {
+  fill: $hero-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// .links-item:not(:last-child) {
+//   margin-right: 10px;
+// }
+.social-links {
+  @extend %list;
+  display: flex;
+  padding-right: 31px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  @media screen and (min-width: 480px) {
+    padding-right: 122px;
+    padding-bottom: 24px;
+    padding-left: 122px;
+  }
+}

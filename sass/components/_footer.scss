@@ -1,0 +1,84 @@
+footer {
+  background-color: $footer-background-color;
+  margin: 0;
+  padding: 0;
+}
+
+.link-item .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $primary-text-color;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $hover-link-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.link-item:not(:last-child) {
+  margin-right: 10px;
+}
+.bottom .conteiner {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  padding-top: 48px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.invitation {
+  color: $hero-text-color;
+  font-family: $main-font, $reserv-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  padding-bottom: 21px;
+  margin: 0;
+}
+
+.footer-invitation {
+  width: 207px;
+
+  margin-right: 93px;
+}
+
+.invitation-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.invitation-links .link-item {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  background-position: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  fill: $hero-text-color;
+
+  align-items: center;
+}

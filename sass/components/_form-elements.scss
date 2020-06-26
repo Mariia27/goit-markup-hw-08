@@ -1,0 +1,74 @@
+.form-elements {
+  padding: 0 40px 20px 40px;
+  margin: 0;
+}
+
+.topic {
+  font-family: $main-font, $reserv-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0;
+  padding: 40px;
+  padding-bottom: 30px;
+}
+.forma-fild {
+  position: relative;
+  display: flex;
+  padding: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+.forma-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  padding: 12px 42px;
+  &:hover,
+  &:focus {
+    border-color: $hover-link-color;
+    outline: none;
+  }
+}
+.forma-name {
+  position: absolute;
+  font-family: Roboto;
+  font-size: 14px;
+
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding: 0;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  margin: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .forma-fild:focus-within & {
+    transform: translate(-30px, -250%);
+    color: $hover-link-color;
+  }
+}
+.forma-input:not(:placeholder-shown) + .forma-name {
+  transform: translate(-30px, -250%);
+  color: $hover-link-color;
+  border-color: $hover-link-color;
+}
+.icon-forma {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  .forma-fild:focus-within & {
+    fill: $hover-link-color;
+    border-color: $hover-link-color;
+  }
+}

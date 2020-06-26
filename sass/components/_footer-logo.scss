@@ -1,0 +1,18 @@
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+  color: $hover-link-color;
+  @extend %links;
+
+  &:hover,
+  &:focus {
+    color: $hover-link-color;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.logo-footer span {
+  color: $hero-text-color;
+}

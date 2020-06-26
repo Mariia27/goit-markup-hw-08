@@ -1,0 +1,24 @@
+.logo {
+  font-family: $logo-font;
+  @extend %links;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.11;
+  letter-spacing: 3%;
+  text-align: center;
+  color: $hover-link-color;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 85px;
+}
+.logo-color {
+  color: $tittle-text-color;
+}
+// .logo-nav {
+//   // display: flex;
+// }
+.logo-nav,
+.logo:hover,
+.logo:focus {
+  color: $hover-link-color;
+}
