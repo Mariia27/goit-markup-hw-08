@@ -4,25 +4,31 @@
   line-height: 1.9;
 }
 
-.conteiner-team {
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  align-items: center;
+// .conteinerteam {
+//   margin: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+//   display: block;
+//   align-items: center;
 
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1170px;
-}
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 .section-team {
   @extend %list;
-
   align-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
   @media screen and (min-width: 1140px) {
-    // display: flex;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
   }
 }
 .section-tittle {
@@ -30,23 +36,29 @@
     width: 100%;
   }
 }
-.employee + .employee {
-  @media screen and (min-width: 450px) {
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 1140px) {
-    margin-left: 30px;
-  }
-}
+
 .employee {
   @extend %list;
   border-radius: 4px;
   background-color: $hero-text-color;
-  width: 450px;
   cursor: pointer;
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1170px) {
+    width: 25%;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 .section-workers {
   font-family: $main-font, $reserv-font;
@@ -98,12 +110,18 @@
 .social-links {
   @extend %list;
   display: flex;
-  padding-right: 31px;
-  padding-bottom: 24px;
-  padding-left: 32px;
-  @media screen and (min-width: 480px) {
-    padding-right: 122px;
+  justify-content: center;
+  // padding-right: 122px;
+  // padding-bottom: 24px;
+  // padding-left: 122px;
+  @media screen and (min-width: 768px) {
+    padding-right: 74px;
     padding-bottom: 24px;
-    padding-left: 122px;
+    padding-left: 74px;
+  }
+  @media screen and (min-width: 1170px) {
+    padding-right: 31px;
+    padding-bottom: 24px;
+    padding-left: 32px;
   }
 }
