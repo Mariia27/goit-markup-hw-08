@@ -3,7 +3,12 @@ footer {
   margin: 0;
   padding: 0;
 }
-
+.address-invitation {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .link-item .social {
   display: flex;
   justify-content: center;
@@ -22,18 +27,33 @@ footer {
 .link-item:not(:last-child) {
   margin-right: 10px;
 }
-.bottom .conteiner {
-  display: flex;
+.bottom {
+  // display: flex;
   /* justify-content: space-between; */
   align-items: baseline;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
-  padding-top: 48px;
-  padding-bottom: 28px;
+  // padding-top: 48px;
+  // padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+.foot {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer-invitation {
+  // width: 207px;
+  // margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
 .invitation {
   color: $hero-text-color;
   font-family: $main-font, $reserv-font;
@@ -41,16 +61,10 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  padding-bottom: 21px;
+  // padding-bottom: 21px;
   margin: 0;
+  padding-bottom: 20px;
 }
-
-.footer-invitation {
-  width: 207px;
-
-  margin-right: 93px;
-}
-
 .invitation-links {
   display: flex;
   margin: 0;

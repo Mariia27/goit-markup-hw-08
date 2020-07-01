@@ -2,63 +2,73 @@
   padding: 0;
   padding-bottom: 60px;
   padding-top: 60px;
+  @media screen and(min-width:1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .regular-clients {
-  margin: 0;
-  padding: 0;
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width: 1140px) {
-    flex-wrap: nowrap;
-  }
-}
-.img-link {
-  display: flex;
-  flex-wrap: nowrap;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  width: 170px;
-  height: 90px;
-
   justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    border-color: $hover-link-color;
-  }
 }
-
-// .clients .customers + .customers {
-//   @media screen and (max-width: 1170px) {
-//     margin-left: 30px;
-//   }
-// }
 .img {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers {
-  // width: calc((100% - 150px) / 6);
   @extend %list;
-  &:nth-child(even) {
-    margin-left: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 90px;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $hover-link-color;
   }
-  @media screen and (min-width: 768px) {
-    &:nth-child(2n + 1) {
-      margin-left: 30px;
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
     }
+    & {
+      width: calc((100% - 30px) / 2);
+    }
   }
-  @media screen and (min-width: 1140px) {
-    width: calc((100% - 150px) / 6);
-  }
-}
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
 
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+    & {
+      width: calc((100% - 60px) / 3);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  //   @media screen and (min-width: 1200px) {
+  //     margin-right: 30px;
+  //   }
+}
 .img-link:hover .img,
 .img-link:focus .img {
   fill: $hover-link-color;
