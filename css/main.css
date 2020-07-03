@@ -144,6 +144,7 @@
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: absolute;
+    display: none;
     background-color: #ffffff;
     width: 100%;
     width: 100%;
@@ -155,6 +156,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .mobile-menu.is-open {
+    display: block;
   }
 }
 
