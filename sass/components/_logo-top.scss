@@ -7,16 +7,32 @@
   letter-spacing: 3%;
   text-align: center;
   color: $hover-link-color;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 85px;
+  @media screen and (max-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 85px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 84px;
+  }
 }
 .logo-color {
   color: $tittle-text-color;
 }
-// .logo-nav {
-//   // display: flex;
-// }
+.logo-nav {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 84px;
+  }
+}
 .logo-nav,
 .logo:hover,
 .logo:focus {
