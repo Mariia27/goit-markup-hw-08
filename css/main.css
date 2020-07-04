@@ -1084,7 +1084,12 @@ address {
   text-transform: uppercase;
   color: #ffffff;
   font-family: roboto, sans-serif;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .join-text {
+    text-align: center;
+  }
 }
 
 .footer-label {

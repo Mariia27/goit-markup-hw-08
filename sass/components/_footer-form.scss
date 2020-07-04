@@ -14,7 +14,9 @@
   text-transform: uppercase;
   color: $hero-text-color;
   font-family: $main-font, $reserv-font;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .footer-label {
   position: relative;
