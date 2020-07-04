@@ -8,49 +8,102 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
       rel="stylesheet"
-    /> -->
+    />
 
-    <!-- <link href="./css/normalize.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/normalize.css"/> -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
-    <header class="top-second">
-      <div class="conteiner">
-        <nav class="logo-nav">
+    <header class="top">
+      <div class="conteiner navigation">
+        <div class="logo-button">
           <a href="./" class="logo"
             >Web <span class="logo-color">Studio</span></a
           >
-          <!-- навігація -->
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link-active">Портфолио</a>
-            </li>
-            <li class="item"><a href="#" class="link">Контакты</a></li>
-          </ul>
-        </nav>
-        <!-- контакти -->
-        <ul class="authorise-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="mail" width="16px" heigh="11.2px">
-                <use href="./images/symbol-defs.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="mail" width="10px" heigh="14.94px">
-                <use href="./images/symbol-defs.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
+
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="переключатель мобильное меню"
+              class="button-mobile"
+              aria-expanded="false"
             >
-          </li>
-        </ul>
+              <use
+                class="icon-cross"
+                href="./images/symbol-defs.svg#icon-close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+          <!-- <button 
+        button-type="button" 
+        class="menu-button" 
+        aria-expanded="false" 
+        aria-controls="menu-container" 
+        data-menu-button>
+        
+
+          <svg 
+          class="menu-svg"
+           width="40px" 
+           heigh="40px" 
+           aria-label="Кнопка мобильного меню" 
+           aria-expanded="false"
+           >
+            <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            
+          </svg>
+        </button> -->
+        </div>
+        <div class="mobile-menu is-open" data-menu="">
+          <nav class="logo-nav">
+            <!-- навігація -->
+            <ul class="site-nav">
+              <li class="item">
+                <a href="./index.html" class="link">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link-active">Портфолио</a>
+              </li>
+              <li class="item"><a href="#" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+          <!-- контакти -->
+          <ul class="authorise-nav">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="mail" width="16px" heigh="11.2px">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="mail" width="10px" heigh="14.94px">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 

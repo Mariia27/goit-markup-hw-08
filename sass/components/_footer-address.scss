@@ -18,9 +18,6 @@
     margin-bottom: 0;
     margin-right: 69px;
     width: 231px;
-    //   justify-content: flex-start;
-    //   align-content: flex-start;
-    // }
   }
 }
 address {
@@ -29,8 +26,6 @@ address {
   font-style: normal;
   line-height: 1.66;
   font-family: $main-font, $reserv-font;
-  // justify-content: center;
-  // align-items: center;
 }
 .text-address {
   @extend %list;
