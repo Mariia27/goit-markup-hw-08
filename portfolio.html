@@ -1,91 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio v.1</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-      rel="stylesheet"
-    />
 
-    <!-- <link rel="stylesheet" href="./css/normalize.css"/> -->
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Studio v.1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    rel="stylesheet" />
 
-  <body>
-    <header class="top">
-      <div class="conteiner navigation">
-        <div class="logo-button">
-          <a href="./" class="logo"
-            >Web <span class="logo-color">Studio</span></a
-          >
+  <!-- <link rel="stylesheet" href="./css/normalize.css"/> -->
+  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
 
-          <button
-            type="button"
-            class="menu-button"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="переключатель мобильное меню"
-              class="button-mobile"
-              aria-expanded="false"
-            >
-              <use
-                class="icon-cross"
-                href="./images/symbol-defs.svg#icon-close"
-              ></use>
-              <use
-                class="icon-menu"
-                href="./images/symbol-defs.svg#icon-menu"
-              ></use>
-            </svg>
-          </button>
-        </div>
-        <div class="mobile-menu is-open" data-menu="">
-          <nav class="logo-nav">
-            <!-- навігація -->
-            <ul class="site-nav">
-              <li class="item">
-                <a href="./index.html" class="link">Студия</a>
-              </li>
-              <li class="item">
-                <a href="./portfolio.html" class="link-active">Портфолио</a>
-              </li>
-              <li class="item"><a href="#" class="link">Контакты</a></li>
-            </ul>
-          </nav>
-          <!-- контакти -->
-          <ul class="authorise-nav">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">
-                <svg class="mail" width="16px" heigh="11.2px">
-                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link">
-                <svg class="mail" width="10px" heigh="14.94px">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
+<body>
+  <header class="top">
+    <div class="conteiner navigation">
+      <div class="logo-button">
+        <a href="./" class="logo">Web <span class="logo-color">Studio</span></a>
+
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+
+          <svg width="40" height="40" aria-label="переключатель мобильное меню" class="button-mobile"
+            aria-expanded="false">
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+
       </div>
-    </header>
+      <div class="mobile-menu " is-open id="menu-container" data-menu>
+        <nav class="logo-nav">
+          <!-- навігація -->
+          <ul class="site-nav">
+            <li class="item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link-active">Портфолио</a></li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <!-- контакти -->
+        <ul class="authorise-nav">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">
+
+              <svg class="mail" width="16px" heigh="11.2px">
+                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="tel" width="10px" heigh="14.94px">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
 
     <main>
       <section class="portfolio">
@@ -114,11 +91,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/tehno.jpg    1x,
-                    ./images/tehno@2x.jpg 2x,
-                    ./images/tehno@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/tehno.jpg    1x,
+                      ./images/tehno@2x.jpg 2x,
+                      ./images/tehno@3x.jpg 3x
+                    "
                     src="./images/tehno.jpg"
                     alt="Веб-сайт Технокряк"
                     class="template"
@@ -139,11 +116,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/poster.jpg    1x,
-                    ./images/poster@2x.jpg 2x,
-                    ./images/poster@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/poster.jpg    1x,
+                      ./images/poster@2x.jpg 2x,
+                      ./images/poster@3x.jpg 3x
+                    "
                     src="./images/poster.jpg"
                     alt="Дизайн постера New Orlean vs Golden Star"
                     class="template"
@@ -166,11 +143,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/seafood.jpg    1x,
-                    ./images/seafood@2x.jpg 2x,
-                    ./images/seafood@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/seafood.jpg    1x,
+                      ./images/seafood@2x.jpg 2x,
+                      ./images/seafood@3x.jpg 3x
+                    "
                     src="./images/seafood.jpg"
                     alt="Приложение Ресторан Seafood"
                     class="template"
@@ -191,11 +168,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/prime.jpg    1x,
-                    ./images/prime@2x.jpg 2x,
-                    ./images/prime@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/prime.jpg    1x,
+                      ./images/prime@2x.jpg 2x,
+                      ./images/prime@3x.jpg 3x
+                    "
                     src="./images/prime.jpg"
                     alt="Маркетинг Проект Prime"
                     class="template"
@@ -217,11 +194,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/boxes.jpg    1x,
-                    ./images/boxes@2x.jpg 2x,
-                    ./images/boxes@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/boxes.jpg    1x,
+                      ./images/boxes@2x.jpg 2x,
+                      ./images/boxes@3x.jpg 3x
+                    "
                     src="./images/boxes.jpg"
                     alt="Приложение Проект Boxes"
                     class="template"
@@ -242,11 +219,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/inspiration.jpg    1x,
-                    ./images/inspiration@2x.jpg 2x,
-                    ./images/inspiration@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/inspiration.jpg    1x,
+                      ./images/inspiration@2x.jpg 2x,
+                      ./images/inspiration@3x.jpg 3x
+                    "
                     src="./images/inspiration.jpg"
                     alt="Веб-сайт Inspiration has no Borders"
                     class="template"
@@ -267,11 +244,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/limited.jpg    1x,
-                    ./images/limited@2x.jpg 2x,
-                    ./images/limited@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/limited.jpg    1x,
+                      ./images/limited@2x.jpg 2x,
+                      ./images/limited@3x.jpg 3x
+                    "
                     src="./images/limited.jpg"
                     alt="Дизайн Издание Limited Edition"
                     class="template"
@@ -292,11 +269,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/lab.jpg    1x,
-                    ./images/lab@2x.jpg 2x,
-                    ./images/lab@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/lab.jpg    1x,
+                      ./images/lab@2x.jpg 2x,
+                      ./images/lab@3x.jpg 3x
+                    "
                     src="./images/lab.jpg"
                     alt="Маркетинг Проект LAB"
                     class="template"
@@ -317,11 +294,11 @@
               <a href="#" class="portfolio-card">
                 <div class="photo">
                   <img
-                    srcet="
-                    ./images/growing.jpg    1x,
-                    ./images/growing@2x.jpg 2x,
-                    ./images/growing@3x.jpg 3x
-                     "
+                    srcset="
+                      ./images/growing.jpg    1x,
+                      ./images/growing@2x.jpg 2x,
+                      ./images/growing@3x.jpg 3x
+                    "
                     src="./images/growing.jpg"
                     alt="Приложение  Growing Business"
                     class="template"
