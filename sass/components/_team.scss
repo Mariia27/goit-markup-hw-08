@@ -46,6 +46,7 @@
 }
 .thumb {
   height: 320px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     height: 260px;
@@ -107,6 +108,11 @@
   @extend %list;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    padding-right: 122px;
+    padding-bottom: 24px;
+    padding-left: 122px;
+  }
   @media screen and (min-width: 768px) {
     padding-right: 74px;
     padding-bottom: 24px;

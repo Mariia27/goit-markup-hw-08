@@ -38,7 +38,7 @@
         </button>
    
        </div>
-        <div class="mobile-menu is-open" data-menu=""> 
+        <div class="mobile-menu" is-open  id= "menu-container" data-menu> 
           <nav class="logo-nav">
             <!-- навігація -->
             <ul class="site-nav">
@@ -53,14 +53,14 @@
               <a href="mailto:info@devstudio.com" class="link">
           
                 <svg class="mail" width="16px" heigh="11.2px">
-                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
             <li class="item">
               <a href="tel:+380961111111" class="link">
-                <svg class="mail" width="10px" heigh="14.94px">
+                <svg class="tel" width="10px" heigh="14.94px">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a>
@@ -148,41 +148,41 @@
           <h2 class="section-tittle">Чем мы занимаемся</h2>
           <ul class="featchers">
             <li class="peculiarity">
-              
-                <img
-                  class="peculiarity-img"
-                  src="./images/notebook.jpg"
-                  alt="ноутбук"
-                  width="370"
-                  height="294"
-                  class="peculiarity-img"
-                />
+              <div class="thumb">
+                <img 
+                srcet="
+                  ./images/notebook.jpg    1x,
+                  ./images/notebook@2x.jpg 2x,
+                  ./images/notebook@3x.jpg 3x
+                  " src="./images/notebook.jpg" alt="ноутбук" class="peculiarity-img" />
+              </div>
+
                 <div class="featchers-text"><h3 class="products">Десктопные приложения</h3></div>
                 
               
             </li>
             <li class="peculiarity">
-              
-                <img
-                 class="peculiarity-img"
-                  src="./images/telepone.jpg"
-                  alt="телефон"
-                  width="370"
-                  height="294"
-                  
-                />
+              <div class="thumb">
+                <img srcet="
+                   ./images/telepone.jpg    1x,
+                   ./images/telepone@2x.jpg 2x,
+                   ./images/telepone@3x.jpg 3x
+                   src="src="./images/telepone.jpg" 
+                   alt="телефон"
+                   class="peculiarity-img" />
+              </div>
                 <div class="featchers-text"><h3 class="products">Мобильные приложения</h3></div>
             
             </li>
             <li class="peculiarity">
-              
-                <img
-                  class="peculiarity-img"
-                  src="./images/mac.jpg"
-                  alt="мак"
-                  width="370"
-                  height="294"
-                />
+              <div class="thumb">
+              <img srcet="
+               ./images/mac.jpg    1x,
+               ./images/mac@2x.jpg 2x,
+               ./images/mac@3x.jpg 3x
+               src=" src="./images/mac.jpg" alt="монитор" 
+               class="peculiarity-img" />
+              </div>
               <div class="featchers-text"> <h3 class="products">Дизайнерские решения</h3></div>
               
             </li>
